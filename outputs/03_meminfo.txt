@@ -1,0 +1,14 @@
+$ head -n 10 /proc/meminfo
+# time: 2026-09-28T16:44:35
+# user: shreyas@Shrey
+
+MemTotal:        7949524 kB
+MemFree:         5843584 kB
+MemAvailable:    7333844 kB
+Buffers:           74392 kB
+Cached:          1514736 kB
+SwapCached:            0 kB
+Active:           374128 kB
+Inactive:        1339184 kB
+Active(anon):       3240 kB
+Inactive(anon):   124848 kB

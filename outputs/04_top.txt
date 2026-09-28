@@ -1,0 +1,46 @@
+$ top -b -n 1
+# time: 2026-09-28T16:44:35
+# user: shreyas@Shrey
+
+top - 16:44:35 up 10 min,  1 user,  load average: 0.63, 0.34, 0.16
+Tasks:  35 total,   1 running,  34 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.8 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7763.2 total,   5706.5 free,    601.2 used,   1638.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7162.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   24536  14512  10928 S   0.0   0.2   0:01.14 systemd
+      2 root      20   0    3120   2048   1920 S   0.0   0.0   0:00.00 init-sy+
+      6 root      20   0    3120   1792   1792 S   0.0   0.0   0:00.00 init
+     46 root      19  -1   42188  16136  15112 S   0.0   0.2   0:00.23 systemd+
+     81 systemd+  20   0   22400  13824  11520 S   0.0   0.2   0:00.10 systemd+
+     91 root      20   0   35260  11520   8832 S   0.0   0.1   0:00.89 systemd+
+    110 root      20   0    2880   1664   1664 S   0.0   0.0   0:00.06 chronyd+
+    111 root      20   0    4464   2944   2816 S   0.0   0.0   0:00.01 cron
+    112 message+  20   0    8784   4736   4352 S   0.0   0.1   0:00.08 dbus-da+
+    132 root      20   0   44080  28228  13824 S   0.0   0.4   0:00.30 network+
+    160 root      20   0   18424   8704   7680 S   0.0   0.1   0:00.13 systemd+
+    162 root      20   0 1866024  14080  11904 S   0.0   0.2   0:00.15 wsl-pro+
+    170 syslog    20   0  220532   4736   4224 S   0.0   0.1   0:00.11 rsyslogd
+    194 root      20   0    5528   2688   2560 S   0.0   0.0   0:00.03 agetty
+    219 root      20   0    5484   2560   2432 S   0.0   0.0   0:00.00 agetty
+    220 _chrony   20   0   20496   6528   6016 S   0.0   0.1   0:00.04 chronyd
+    221 root      20   0  123444  32000  17536 S   0.0   0.4   0:00.24 unatten+
+    229 _chrony   20   0   12080   2248   1664 S   0.0   0.0   0:00.00 chronyd
+    328 root      20   0    3128    900    768 S   0.0   0.0   0:00.00 Session+
+    329 root      20   0    3144   1036    896 S   0.0   0.0   0:00.06 Relay(3+
+    330 shreyas   20   0    6260   5120   3584 S   0.0   0.1   0:00.13 bash
+    331 root      20   0    8632   5376   4608 S   0.0   0.1   0:00.02 login
+    375 shreyas   20   0   22496  12800  10496 S   0.0   0.2   0:00.16 systemd
+    377 shreyas   20   0   22900   4044   2048 S   0.0   0.1   0:00.00 (sd-pam)
+    406 shreyas   20   0    6128   5376   3840 S   0.0   0.1   0:00.03 bash
+    593 root      20   0  340140  21504  18688 S   0.0   0.3   0:00.06 package+
+    598 polkitd   20   0  306436   8064   7424 S   0.0   0.1   0:00.10 polkitd
+   1484 root      20   0   35264   6872   3840 S   0.0   0.1   0:00.03 (udev-w+
+   1485 root      20   0   35264   6744   3712 S   0.0   0.1   0:00.01 (udev-w+
+   1486 root      20   0   35264   6744   3712 S   0.0   0.1   0:00.00 (udev-w+
+   1487 root      20   0   35264   6744   3712 S   0.0   0.1   0:00.01 (udev-w+
+   1488 root      20   0   35264   6744   3712 S   0.0   0.1   0:00.00 (udev-w+
+   1489 root      20   0   35264   6744   3712 S   0.0   0.1   0:00.00 (udev-w+
+   1495 shreyas   20   0   20572  14208   7936 S   0.0   0.2   0:00.08 python3
+   1499 shreyas   20   0    8160   5376   3456 R   0.0   0.1   0:00.00 top

@@ -1,0 +1,40 @@
+$ ps -eo pid,stat,comm --sort=-%cpu
+# time: 2026-09-28T16:44:36
+# user: shreyas@Shrey
+
+    PID STAT COMMAND
+   1501 R+   ps
+   1495 S+   python3
+   1484 S    (udev-worker)
+      1 Ss   systemd
+   1487 S    (udev-worker)
+     91 Ss   systemd-udevd
+   1485 S    (udev-worker)
+    132 Ss   networkd-dispat
+    221 Ssl  unattended-upgr
+     46 S<s  systemd-journal
+    375 Ss   systemd
+    162 Ssl  wsl-pro-service
+    330 Ss   bash
+    160 Ss   systemd-logind
+    598 Ssl  polkitd
+    170 Ssl  rsyslogd
+     81 Ss   systemd-resolve
+    112 Ss   dbus-daemon
+    593 Ssl  packagekitd
+    329 S    Relay(330)
+    110 Ss   chronyd-starter
+    220 S    chronyd
+    406 Ss+  bash
+    194 Ss+  agetty
+    331 Ss   login
+    111 Ss   cron
+      2 Sl   init-systemd(Ub
+      6 Sl   init
+    219 Ss+  agetty
+    229 S    chronyd
+    328 Ss   SessionLeader
+    377 S    (sd-pam)
+   1486 S    (udev-worker)
+   1488 S    (udev-worker)
+   1489 S    (udev-worker)

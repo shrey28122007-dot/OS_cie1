@@ -1,0 +1,61 @@
+$ strace -c ls /
+# time: 2026-09-28T16:44:36
+# user: shreyas@Shrey
+
+bin
+boot
+dev
+etc
+home
+init
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+sys
+tmp
+usr
+var
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ------------------
+ 40.34    0.008783         325        27           mmap
+ 30.19    0.006573        2191         3           sigaltstack
+  5.39    0.001173          65        18           read
+  2.69    0.000585          65         9           rt_sigaction
+  2.42    0.000527          43        12         1 openat
+  2.30    0.000501         250         2           getdents64
+  2.04    0.000445          40        11           close
+  1.70    0.000370          37        10           fstat
+  1.29    0.000281          35         8         6 ioctl
+  1.27    0.000277         138         2           munmap
+  1.21    0.000263          65         4           lseek
+  1.13    0.000247          82         3           fcntl
+  0.88    0.000192          24         8           mprotect
+  0.87    0.000189          37         5           brk
+  0.80    0.000175         175         1           getrandom
+  0.79    0.000172          28         6           statx
+  0.73    0.000159         159         1           arch_prctl
+  0.70    0.000153          76         2         1 statfs
+  0.63    0.000137          68         2           pread64
+  0.40    0.000087          87         1           write
+  0.30    0.000066          66         1           gettid
+  0.30    0.000065          32         2           prlimit64
+  0.30    0.000065          65         1           rseq
+  0.29    0.000064          64         1           set_tid_address
+  0.29    0.000063          63         1           sched_getaffinity
+  0.28    0.000060          30         2         2 access
+  0.28    0.000060          60         1           set_robust_list
+  0.18    0.000039          39         1           newfstatat
+  0.00    0.000000           0         1           poll
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           prctl
+------ ----------- ----------- --------- --------- ------------------
+100.00    0.021771         147       148        10 total
